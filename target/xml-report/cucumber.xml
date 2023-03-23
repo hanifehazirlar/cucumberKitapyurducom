@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="36.097">
+    <testcase classname="Login Test" name="Valid Login" time="35.708">
+        <failure message="element click intercepted: Element &lt;button class=&quot;btn btn-primary text-white fw-bold p-3 w-100&quot; id=&quot;login-button&quot; value=&quot;...&quot;&gt;Giriş Yap&lt;/button&gt; is not clickable at point (180, 294). Other element would receive the click: &lt;div id=&quot;js-popup-container&quot; class=&quot;popup-container alert bg-black col-lg-8 col-sm-10 fade fixed-bottom fs-13 mx-3 mx-sm-auto py-10px show text-white&quot; role=&quot;alert&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=111.0.5563.57)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-CPLJUEO', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, autoAcceptAlert: true, automationName: UiAutomator2, browserName: chrome, databaseEnabled: false, desired: {appActivity: , appPackage: , autoAcceptAlert: true, automationName: UiAutomator2, browserName: chrome, deviceName: FFY5T18301014957, newCommandTimeout: 60000, noReset: true, platformName: android, platformVersion: 8.0.0}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: RNE-L21, deviceName: FFY5T18301014957, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: FFY5T18301014957, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60000, noReset: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 8.0.0, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 1968, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: 0f5e5e69-5082-4104-bce6-ccac5863f1a9" type="org.openqa.selenium.ElementClickInterceptedException">
+            <![CDATA[Given User goes to url......................................................passed
+When User click to loginButton..............................................passed
+And User send "validEmail" to email box.....................................passed
+And User send "validPassword" to password box...............................passed
+And User click loginButton on login page....................................failed
+Then User see hesabim text..................................................skipped
+When User clear the cookies.................................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="btn btn-primary text-white fw-bold p-3 w-100" id="login-button" value="...">Giriş Yap</button> is not clickable at point (180, 294). Other element would receive the click: <div id="js-popup-container" class="popup-container alert bg-black col-lg-8 col-sm-10 fade fixed-bottom fs-13 mx-3 mx-sm-auto py-10px show text-white" role="alert" style="display: block;">...</div>
+  (Session info: chrome=111.0.5563.57)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CPLJUEO', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, autoAcceptAlert: true, automationName: UiAutomator2, browserName: chrome, databaseEnabled: false, desired: {appActivity: , appPackage: , autoAcceptAlert: true, automationName: UiAutomator2, browserName: chrome, deviceName: FFY5T18301014957, newCommandTimeout: 60000, noReset: true, platformName: android, platformVersion: 8.0.0}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: RNE-L21, deviceName: FFY5T18301014957, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: FFY5T18301014957, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60000, noReset: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 8.0.0, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 1968, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0f5e5e69-5082-4104-bce6-ccac5863f1a9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+	at utils.ReusableMethods.tapOn(ReusableMethods.java:77)
+	at stepDefinitions.LoginStepdefs.userClickLoginButtonOnLoginPage(LoginStepdefs.java:50)
+	at ✽.User click loginButton on login page(file:///C:/Users/lenovo/IdeaProjects/Kitapyurducom/src/test/resources/features/login.feature:10)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
