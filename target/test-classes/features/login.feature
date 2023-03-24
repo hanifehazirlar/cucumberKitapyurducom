@@ -7,6 +7,6 @@ Feature: Login Test
     When User click to loginButton
     And User send "validEmail" to email box
     And User send "validPassword" to password box
-    And User click loginButton on login page
-    Then User see hesabim text
+    #And User click loginButton on login page
+    Then User see "validEmail" text
     When User clear the cookies

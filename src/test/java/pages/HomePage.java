@@ -1,7 +1,5 @@
-package screens;
+package pages;
 
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,8 +8,8 @@ import utils.Driver;
 
 import java.time.Duration;
 
-public class HomeScreen {
-public HomeScreen() {
+public class HomePage {
+public HomePage() {
     PageFactory.initElements(new AppiumFieldDecorator(Driver.getAppiumDriver(), Duration.ofSeconds(30)),this);
 }
     @FindBy(xpath = "//*[@class='main-sprite icon-header-account-nologin d-block']")
@@ -29,5 +27,14 @@ public HomeScreen() {
 
     @FindBy(xpath = "//*[@id='login-button']")
     public WebElement loginButtonWE;
+
+
+    @FindBy(xpath = "//*[@class='fs-18 fw-bold mt-2 text-orange-dark']")
+    public WebElement userNameText;
+
+
+    @FindBy(xpath = "//*[@class='fs-14 mb-3 text-gray']")
+    public WebElement emailHeaderText;
+
 
 }

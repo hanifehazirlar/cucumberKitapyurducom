@@ -4,7 +4,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import screens.HomeScreen;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import pages.HomePage;
 import utils.ConfigReader;
 import utils.Driver;
 import utils.ReusableMethods;
@@ -12,7 +16,7 @@ import utils.ReusableMethods;
 import java.util.Set;
 
 public class LoginStepdefs {
-    HomeScreen homeScreen = new HomeScreen();
+    HomePage homePage = new HomePage();
     @Given("User goes to url")
     public void userGoesToUrl() {
         Driver.getAppiumDriver().get("https://www.kitapyurdu.com/");
@@ -29,32 +33,43 @@ public class LoginStepdefs {
         }
         System.out.println(Driver.getAppiumDriver().getContext() + "<========degisimden sonraki tur");
         System.out.println("gettitle : "+Driver.getAppiumDriver().getTitle());
-        ReusableMethods.tapOn(homeScreen.myAccountIconWE);
+        ReusableMethods.tapOn(homePage.myAccountIconWE);
 
     }
 
     @And("User send {string} to email box")
     public void userSendToEmailBox(String validEmail) {
-        ReusableMethods.enterKeys(homeScreen.emailBoxWE, ConfigReader.getProperty("validEmail"));
+        ReusableMethods.enterKeys(homePage.emailBoxWE, ConfigReader.getProperty(validEmail));
 
     }
 
     @And("User send {string} to password box")
     public void userSendToPasswordBox(String validPassword) {
-        ReusableMethods.enterKeys(homeScreen.passwordBoxWE,ConfigReader.getProperty("validPassword"));
+        homePage.passwordBoxWE.sendKeys(ConfigReader.getProperty(validPassword),Keys.ENTER);
+
+
 
     }
 
     @And("User click loginButton on login page")
     public void userClickLoginButtonOnLoginPage() {
-        ReusableMethods.tapOn(homeScreen.loginButtonWE);
+
+        //ReusableMethods.clickElement(homeScreen.loginButtonWE);
     }
 
     @Then("User see hesabim text")
     public void userSeeHesabimText() {
+     ReusableMethods.isElementPresent(homePage.userNameText);
+
     }
 
     @When("User clear the cookies")
     public void userClearTheCookies() {
+        Driver.getAppiumDriver().manage().deleteAllCookies();
+    }
+
+    @Then("User see {string} text")
+    public void userSeeText(String validEmail) {
+        Assert.assertTrue(homePage.emailHeaderText.getText().contains(ConfigReader.getProperty(validEmail)));
     }
 }

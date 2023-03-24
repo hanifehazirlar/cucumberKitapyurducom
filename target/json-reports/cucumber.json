@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-03-23T07:10:46.475Z",
+        "start_timestamp": "2023-03-24T06:59:57.478Z",
         "line": 5,
         "name": "Valid Login",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 22984625500,
+              "duration": 28148172700,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 9379452200,
+              "duration": 10137728000,
               "status": "passed"
             },
             "line": 7,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 782303200,
+              "duration": 1112598400,
               "status": "passed"
             },
             "line": 8,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 703151100,
+              "duration": 1021077200,
               "status": "passed"
             },
             "line": 9,
@@ -73,32 +73,26 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cbutton class\u003d\"btn btn-primary text-white fw-bold p-3 w-100\" id\u003d\"login-button\" value\u003d\"...\"\u003eGiriş Yap\u003c/button\u003e is not clickable at point (180, 294). Other element would receive the click: \u003cdiv id\u003d\"js-popup-container\" class\u003d\"popup-container alert bg-black col-lg-8 col-sm-10 fade fixed-bottom fs-13 mx-3 mx-sm-auto py-10px show text-white\" role\u003d\"alert\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d111.0.5563.57)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-CPLJUEO\u0027, ip: \u0027192.168.1.104\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, autoAcceptAlert: true, automationName: UiAutomator2, browserName: chrome, databaseEnabled: false, desired: {appActivity: , appPackage: , autoAcceptAlert: true, automationName: UiAutomator2, browserName: chrome, deviceName: FFY5T18301014957, newCommandTimeout: 60000, noReset: true, platformName: android, platformVersion: 8.0.0}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: RNE-L21, deviceName: FFY5T18301014957, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: FFY5T18301014957, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60000, noReset: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 8.0.0, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 1968, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: 0f5e5e69-5082-4104-bce6-ccac5863f1a9\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)\r\n\tat io.appium.java_client.MobileElement.execute(MobileElement.java:1)\r\n\tat io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)\r\n\tat io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)\r\n\tat io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(\u003cgenerated\u003e)\r\n\tat utils.ReusableMethods.tapOn(ReusableMethods.java:77)\r\n\tat stepDefinitions.LoginStepdefs.userClickLoginButtonOnLoginPage(LoginStepdefs.java:50)\r\n\tat ✽.User click loginButton on login page(file:///C:/Users/lenovo/IdeaProjects/Kitapyurducom/src/test/resources/features/login.feature:10)\r\n",
-              "duration": 1689501300,
-              "status": "failed"
-            },
-            "line": 10,
-            "name": "User click loginButton on login page",
-            "match": {
-              "location": "stepDefinitions.LoginStepdefs.userClickLoginButtonOnLoginPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 3670723700,
+              "status": "passed"
             },
             "line": 11,
-            "name": "User see hesabim text",
+            "name": "User see \"validEmail\" text",
             "match": {
-              "location": "stepDefinitions.LoginStepdefs.userSeeHesabimText()"
+              "arguments": [
+                {
+                  "val": "\"validEmail\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepDefinitions.LoginStepdefs.userSeeText(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1002100,
-              "status": "skipped"
+              "duration": 665050300,
+              "status": "passed"
             },
             "line": 12,
             "name": "User clear the cookies",
