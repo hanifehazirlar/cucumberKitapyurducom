@@ -18,23 +18,11 @@ public HomePage() {
     //            ilerledigimiz icin Screens de @AndroidFindBy ve MobileElement calismiyor. Bu yuzden @FindBy ve WebElement
     //            kullanmamiz gerekti.
 
-
-    @FindBy(xpath = "//*[@id='login-email']")
-    public WebElement emailBoxWE;
-
-    @FindBy(xpath = "//*[@id='login-password']")
-    public WebElement passwordBoxWE;
-
-    @FindBy(xpath = "//*[@id='login-button']")
-    public WebElement loginButtonWE;
+    @FindBy(xpath = "//a[contains(@href,'register')]")
+    public WebElement registerButton;
 
 
-    @FindBy(xpath = "//*[@class='fs-18 fw-bold mt-2 text-orange-dark']")
-    public WebElement userNameText;
 
-
-    @FindBy(xpath = "//*[@class='fs-14 mb-3 text-gray']")
-    public WebElement emailHeaderText;
 
 
 }
