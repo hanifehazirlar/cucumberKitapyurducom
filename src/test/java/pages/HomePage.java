@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
 
 import java.time.Duration;
+import java.util.List;
 
 public class HomePage {
 public HomePage() {
@@ -20,6 +21,10 @@ public HomePage() {
 
     @FindBy(xpath = "//a[contains(@href,'register')]")
     public WebElement registerButton;
+
+    @FindBy(xpath = "//*[@id=\"js-popup-accept-button\"]")
+    public List<WebElement> acceptCookiePopUp;
+
 
 
 

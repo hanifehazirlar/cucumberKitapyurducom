@@ -11,27 +11,26 @@ import utils.ConfigReader;
 import utils.Driver;
 import utils.ReusableMethods;
 
-public class LoginStepDef extends ReusableMethods {
-    Pages pages = new Pages();
+public class LoginStepDef extends Pages {
     @Given("User goes to url")
     public void userGoesToUrl() {
         Driver.getAppiumDriver().get("https://www.kitapyurdu.com/");
        }
     @When("User click to MyAccount Icon")
     public void userClickToMyAccountIcon() {
-         ReusableMethods.tapOn(pages.homePage().myAccountIconWE);
+         ReusableMethods.tapOn(homePage().myAccountIconWE);
 
     }
 
     @And("User send {string} to email box")
     public void userSendToEmailBox(String validEmail) {
-        ReusableMethods.enterKeys(pages.loginPage().emailBox, ConfigReader.getProperty(validEmail));
+        ReusableMethods.enterKeys(loginPage().emailBox, ConfigReader.getProperty(validEmail));
 
     }
 
     @And("User send {string} to password box")
     public void userSendToPasswordBox(String validPassword) {
-        pages.loginPage().passwordBox.sendKeys(ConfigReader.getProperty(validPassword),Keys.ENTER);
+      loginPage().passwordBox.sendKeys(ConfigReader.getProperty(validPassword),Keys.ENTER);
 
 
 
@@ -50,6 +49,6 @@ public class LoginStepDef extends ReusableMethods {
 
     @Then("User see {string} text")
     public void userSeeText(String validEmail) {
-        Assert.assertTrue(pages.loginPage().userEmailHeader.getText().contains(ConfigReader.getProperty(validEmail)));
+        Assert.assertTrue(loginPage().userEmailHeader.getText().contains(ConfigReader.getProperty(validEmail)));
     }
 }

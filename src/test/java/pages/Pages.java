@@ -4,12 +4,20 @@ import utils.ReusableMethods;
 
 public class Pages extends ReusableMethods {
     public Pages(){
-
     }
 
     private HomePage homeScreen;
     private LoginPage loginPage;
     private RegisterPage registerPage;
+
+    private OrderPage orderPage;
+
+    public OrderPage orderPage(){
+        if (orderPage== null){
+            orderPage = new OrderPage();
+        }
+        return orderPage;
+    }
 
     public HomePage homePage() {
         if (homeScreen == null) {

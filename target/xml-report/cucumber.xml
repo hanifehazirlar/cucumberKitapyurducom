@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="70.698">
-    <testcase classname="Register" name="Register Test" time="70.043">
-        <failure message="Can't locate an element by this strategy: By.xpath: //*[@class='fs-24 fw-bold mt-4 text-green-dark']" type="org.openqa.selenium.NoSuchElementException">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="94.93">
+    <testcase classname="New User Order with Bank Transfer" name="New User Order with Bank Transfer Test" time="94.341">
+        <failure message="Expected condition failed: waiting for visibility of Located by By.xpath: //*[@class='btn btn-primary text-white fw-bolder p-3 w-100 mb-3'] (tried for 9 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">
             <![CDATA[Given User goes to url......................................................passed
-And User click to MyAccount Icon............................................passed
-And User click to Register Button...........................................passed
-And User types "Hanife" to name box.........................................passed
-And User types "Hazirlar" to last name box..................................passed
-And User types "hanifeunlu74@hotmail.com" to email box......................passed
-And User types "CanTeam123*" to password box................................passed
-And User types "CanTeam123*" to confirmation password box...................passed
-And User click personal data privacy check box..............................passed
-And User click Register Button..............................................passed
-And User verifies Account Created message is visible........................failed
+When User ckicks accept button on popup.....................................passed
+When User adds a  physical product to basket................................passed
+When User ckicks accept button on popup.....................................passed
+And User clicks add to basket button........................................passed
+And User clicks my basket icon..............................................passed
+And User clicks buy icon....................................................passed
+And User clicks Now Register Button.........................................passed
+And The user fills in the information in the form with valid values.........passed
+And User click Register Button..............................................failed
+And User verifies Account Created message is visible........................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //*[@class='fs-24 fw-bold mt-4 text-green-dark']
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.xpath: //*[@class='btn btn-primary text-white fw-bolder p-3 w-100 mb-3'] (tried for 9 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at utils.ReusableMethods.waitForVisibility(ReusableMethods.java:141)
+	at utils.ReusableMethods.clickElement(ReusableMethods.java:145)
+	at stepDefinitions.RegisterStepDef.userClickRegisterButton(RegisterStepDef.java:71)
+	at ✽.User click Register Button(file:///C:/Users/lenovo/IdeaProjects/Kitapyurducom/src/test/resources/features/orderNeeUserBankTransfer.feature:15)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.xpath: //*[@class='btn btn-primary text-white fw-bolder p-3 w-100 mb-3']
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.equals(<generated>)
-	at org.junit.Assert.isEquals(Assert.java:133)
-	at org.junit.Assert.equalsRegardingNull(Assert.java:129)
-	at org.junit.Assert.assertEquals(Assert.java:112)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepDefinitions.RegisterStepDef.userVerifiesAccountCreatedMessageIsVisible(RegisterStepDef.java:56)
-	at ✽.User verifies Account Created message is visible(file:///C:/Users/lenovo/IdeaProjects/Kitapyurducom/src/test/resources/features/register.feature:14)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@68868328 (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.equals(<generated>)
-	at org.junit.Assert.isEquals(Assert.java:133)
-	at org.junit.Assert.equalsRegardingNull(Assert.java:129)
-	at org.junit.Assert.assertEquals(Assert.java:112)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at stepDefinitions.RegisterStepDef.userVerifiesAccountCreatedMessageIsVisible(RegisterStepDef.java:56)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at utils.ReusableMethods.waitForVisibility(ReusableMethods.java:141)
+	at utils.ReusableMethods.clickElement(ReusableMethods.java:145)
+	at stepDefinitions.RegisterStepDef.userClickRegisterButton(RegisterStepDef.java:71)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,15 +77,21 @@ Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: wait
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='fs-24 fw-bold mt-4 text-green-dark']"}
-  (Session info: chrome=111.0.5563.57)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@367f0121 (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 53 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='btn btn-primary text-white fw-bolder p-3 w-100 mb-3']"}
+  (Session info: chrome=111.0.5563.115)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CPLJUEO', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, autoAcceptAlert: true, automationName: UiAutomator2, browserName: chrome, databaseEnabled: false, desired: {appActivity: , appPackage: , autoAcceptAlert: true, automationName: UiAutomator2, browserName: chrome, deviceName: FFY5T18301014957, newCommandTimeout: 60000, noReset: true, platformName: android, platformVersion: 8.0.0}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: RNE-L21, deviceName: FFY5T18301014957, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: FFY5T18301014957, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60000, noReset: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 8.0.0, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 1968, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: f95cbb5e-6da5-4806-b3ea-719600164595
-*** Element info: {Using=xpath, value=//*[@class='fs-24 fw-bold mt-4 text-green-dark']}
+Session ID: 348ca75d-7708-4325-8488-2f3576f81c77
+*** Element info: {Using=xpath, value=//*[@class='btn btn-primary text-white fw-bolder p-3 w-100 mb-3']}
 	at jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
@@ -123,7 +126,7 @@ Session ID: f95cbb5e-6da5-4806-b3ea-719600164595
 	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
 	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 52 more
+	... 55 more
 ]]>
         </failure>
     </testcase>
