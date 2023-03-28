@@ -61,8 +61,10 @@ public class RegisterStepDef extends Pages {
     }
     @And("User click personal data privacy check box")
     public void userClickPersonalDataPrivacyCheckBox() {
-        clickElement(registerPage().admitText);
-        clickElement(registerPage().privacyCheckBox);
+        if (homePage().acceptCookiePopUp.size()!=0) {
+            jsclick(homePage().acceptCookiePopUp.get(0));
+        }
+        jsclick(registerPage().privacyCheckBox);
 
     }
 

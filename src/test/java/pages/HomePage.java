@@ -25,6 +25,9 @@ public HomePage() {
     @FindBy(xpath = "//*[@id=\"js-popup-accept-button\"]")
     public List<WebElement> acceptCookiePopUp;
 
+    @FindBy(xpath = "//*[@id='js-popup-accept-button']")
+    public WebElement admitText;
+
 
 
 

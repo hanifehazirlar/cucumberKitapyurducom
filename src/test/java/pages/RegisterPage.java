@@ -39,8 +39,7 @@ public class RegisterPage {
     @FindBy(xpath = "//*[@class='fs-24 fw-bold mt-4 text-green-dark']")
     public WebElement accountText;
 
-    @FindBy(xpath = "//*[@id='js-popup-accept-button']")
-    public WebElement admitText;
+
 
 
 

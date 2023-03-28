@@ -12,6 +12,15 @@ public class Pages extends ReusableMethods {
 
     private OrderPage orderPage;
 
+    private AdressPage adressPage;
+    public  AdressPage adressPage(){
+        if (adressPage==null){
+            adressPage = new AdressPage();
+        }
+        return  adressPage;
+    }
+
+
     public OrderPage orderPage(){
         if (orderPage== null){
             orderPage = new OrderPage();
@@ -39,7 +48,5 @@ public class Pages extends ReusableMethods {
         }
         return registerPage;
     }
-
-
 }
 
