@@ -29,6 +29,21 @@ public class OrderPage  {
     @FindBy(xpath = "//*[@href='index.php?route=account/address/insert']")
     public WebElement addAddressButton;
 
+    @FindBy(xpath = "//*[@id=\"continue-button\"]")
+    public WebElement continueButton;
+
+
+    @FindBy(xpath = "//*[@id=\"payment-method-bank-transfer\"]")
+    public WebElement bankTransferRadioBox;
+
+    @FindBy(xpath = "//*[@id=\"terms-and-conditions-agree\"]")
+    public WebElement preinformationCheckBox;
+
+    @FindBy(xpath = "//*[@class=\"text-green-dark text-center fw-bold mb-10px\"]")
+    public WebElement siparisinizOnayMessage    ;
+
+
+
 
 
 }

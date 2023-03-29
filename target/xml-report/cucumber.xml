@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="119.809">
-    <testcase classname="New User Order with Bank Transfer" name="New User Order with Bank Transfer Test" time="119.345">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="144.464">
+    <testcase classname="New User Order with Bank Transfer" name="New User Order with Bank Transfer Test" time="143.862">
         <system-out>
             <![CDATA[Given User goes to url......................................................passed
 When User ckicks accept button on popup.....................................passed
@@ -14,6 +14,16 @@ And The user fills in the information in the form with valid values.........pass
 And User click Register Button..............................................passed
 And User verifies Account Created message is visible........................passed
 And User clicks Add adress button...........................................passed
+And The user fills in the information on the address page...................passed
+Then User verifies that they have successfully added the address............passed
+And User clicks OK button...................................................passed
+And User clicks my basket icon..............................................passed
+And User clicks buy icon....................................................passed
+And User clicks continue button.............................................passed
+And User clicks Bank transfer radio button..................................passed
+And User clicks continue button.............................................passed
+And User clicks preinformation check box....................................passed
+And User confirm order button...............................................passed
 ]]>
         </system-out>
     </testcase>

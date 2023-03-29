@@ -14,3 +14,13 @@ Feature: New User Order with Bank Transfer
     And User click Register Button
     And User verifies Account Created message is visible
     And User clicks Add adress button
+    And The user fills in the information on the address page
+    Then  User verifies that they have successfully added the address
+    And User clicks OK button
+    And User clicks my basket icon
+    And User clicks buy icon
+    And User clicks continue button
+    And User clicks Bank transfer radio button
+    And User clicks continue button
+    And User clicks preinformation check box
+    And User confirm order button

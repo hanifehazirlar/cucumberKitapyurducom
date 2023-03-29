@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-03-28T06:36:45.632Z",
+        "start_timestamp": "2023-03-29T07:00:55.625Z",
         "line": 4,
         "name": "New User Order with Bank Transfer Test",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 27502886900,
+              "duration": 28817249200,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1132087900,
+              "duration": 1401116500,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 5061489000,
+              "duration": 6032288300,
               "status": "passed"
             },
             "line": 7,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 30586423900,
+              "duration": 30387641600,
               "status": "passed"
             },
             "line": 8,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 3554870800,
+              "duration": 3485972900,
               "status": "passed"
             },
             "line": 9,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 1865159600,
+              "duration": 1357106100,
               "status": "passed"
             },
             "line": 10,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 2879070000,
+              "duration": 3296688100,
               "status": "passed"
             },
             "line": 11,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 2692320300,
+              "duration": 2825284300,
               "status": "passed"
             },
             "line": 12,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 38576537400,
+              "duration": 35131783800,
               "status": "passed"
             },
             "line": 13,
@@ -121,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 3417509600,
+              "duration": 2942574500,
               "status": "passed"
             },
             "line": 14,
@@ -133,7 +133,7 @@
           },
           {
             "result": {
-              "duration": 159012900,
+              "duration": 219322700,
               "status": "passed"
             },
             "line": 15,
@@ -145,13 +145,133 @@
           },
           {
             "result": {
-              "duration": 1741130400,
+              "duration": 1541282500,
               "status": "passed"
             },
             "line": 16,
             "name": "User clicks Add adress button",
             "match": {
               "location": "stepDefinitions.OrderStepDef.userClicksAddAdressButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13014913100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The user fills in the information on the address page",
+            "match": {
+              "location": "stepDefinitions.OrderStepDef.theUserFillsInTheInformationOnTheAddressPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1441245400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verifies that they have successfully added the address",
+            "match": {
+              "location": "stepDefinitions.OrderStepDef.userVerifiesThatTheyHaveSuccessfullyAddedTheAddress()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1766555300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User clicks OK button",
+            "match": {
+              "location": "stepDefinitions.OrderStepDef.userClicksOKButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1380256400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User clicks my basket icon",
+            "match": {
+              "location": "stepDefinitions.OrderStepDef.userClicksMyBasketIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4003242000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User clicks buy icon",
+            "match": {
+              "location": "stepDefinitions.OrderStepDef.userClicksBuyIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1815599900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User clicks continue button",
+            "match": {
+              "location": "stepDefinitions.OrderStepDef.userClicksContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 546039400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User clicks Bank transfer radio button",
+            "match": {
+              "location": "stepDefinitions.OrderStepDef.userClicksBankTransferRadioButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 349025400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User clicks continue button",
+            "match": {
+              "location": "stepDefinitions.OrderStepDef.userClicksContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1541302700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User clicks preinformation check box",
+            "match": {
+              "location": "stepDefinitions.OrderStepDef.userClicksPreinformationCheckBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 329027300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User confirm order button",
+            "match": {
+              "location": "stepDefinitions.OrderStepDef.userConfirmOrderButton()"
             },
             "keyword": "And "
           }

@@ -20,15 +20,19 @@ public class AdressPage {
     public WebElement lastnamebox;
 
     @FindBy(xpath = "//*[@id='btn-modal-country']")
-    public WebElement countryDropdown;
+    public WebElement countryBox;
+
+    @FindBy(xpath = "//*[@data-name='Türkiye']")
+    public WebElement turkiye;
+
     @FindBy(xpath = "//*[@id='btn-modal-zone']")
-    public WebElement cityDropdown;
+    public WebElement cityBox;
 
     @FindBy(xpath = "//*[@id='county']")
-    public WebElement townDropdown;
+    public WebElement townBox;
 
     @FindBy(xpath = "//*[@id='btn-modal-district']")
-    public WebElement districtDropdown;
+    public WebElement districtBox;
 
     @FindBy(xpath = "//*[@id='address']")
     public WebElement adressBox;
@@ -39,11 +43,20 @@ public class AdressPage {
 
     @FindBy(xpath = "//*[@id='telephone']")
     public WebElement telephoneBox;
+    @FindBy(xpath = "//*[@id='mobile_telephone']")
+    public WebElement mobile_telephoneBox;
 
     @FindBy(xpath = "//*[@id='tax_id']")
     public WebElement tax_idBox;
 
     @FindBy(xpath = "//*[@id='insert-address-button']")
     public WebElement summitButton;
+
+    @FindBy(xpath = "//*[@id='swal2-html-container']")
+    public WebElement verifyMessage;
+
+    @FindBy(xpath = "//button[@class='swal2-confirm swal2-styled swal2-default-outline']")
+    public WebElement OKButton;
+
 
 }
