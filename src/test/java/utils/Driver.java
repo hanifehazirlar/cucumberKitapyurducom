@@ -30,8 +30,9 @@ public class Driver {
             desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, ConfigReader.getProperty("platformVersion"));
             desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, ConfigReader.getProperty("deviceName"));
 
-           // desiredCapabilities.setCapability(MobileCapabilityType.APP, ConfigReader.getProperty("appPath"));
-            desiredCapabilities.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome");
+            desiredCapabilities.setCapability(MobileCapabilityType.APP, ConfigReader.getProperty("appPath"));
+            // desiredCapabilities.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome"); //bu kismi Chrome uzerinden
+            // testlerimizi gerceklestirecegimiz zaman calistiriyoruz ustteki mobil uygulamayai yoruma aliyoruz
            // desiredCapabilities.setCapability("chromeDriverExecutable","C:\\Users\\lenovo\\IdeaProjects\\Kitapyurducom\\src\\driver\\chromedriver.exe");
             desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, true);
             desiredCapabilities.setCapability("autoAcceptAlert",true);

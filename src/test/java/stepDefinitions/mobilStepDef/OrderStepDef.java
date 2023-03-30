@@ -1,4 +1,4 @@
-package stepDefinitions;
+package stepDefinitions.mobilStepDef;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import pages.Pages;
 import utils.ConfigReader;
 import utils.Driver;
-import utils.ReusableMethods;
 
 public class OrderStepDef extends Pages {
      RegisterStepDef registerStepDef=new RegisterStepDef();

@@ -24,3 +24,4 @@ Feature: New User Order with Bank Transfer
     And User clicks continue button
     And User clicks preinformation check box
     And User confirm order button
+    Then User verifies order created message is visible

@@ -1,4 +1,4 @@
-package stepDefinitions;
+package stepDefinitions.mobilStepDef;
 
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;

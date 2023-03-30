@@ -3,294 +3,102 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-03-29T07:00:55.625Z",
+        "start_timestamp": "2023-03-30T07:28:34.742Z",
         "line": 4,
-        "name": "New User Order with Bank Transfer Test",
+        "name": "Android Valid Login Test",
         "description": "",
-        "id": "new-user-order-with-bank-transfer;new-user-order-with-bank-transfer-test",
+        "id": "android-login;android-valid-login-test",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 28817249200,
+              "duration": 24055670900,
               "status": "passed"
             },
             "line": 5,
-            "name": "User goes to url",
+            "name": "Anroid  on the main screen",
             "match": {
-              "location": "stepDefinitions.LoginStepDef.userGoesToUrl()"
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.anroidOnTheMainScreen()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1401116500,
+              "duration": 6228857500,
               "status": "passed"
             },
             "line": 6,
-            "name": "User ckicks accept button on popup",
+            "name": "Android clicks to my account icon",
             "match": {
-              "location": "stepDefinitions.OrderStepDef.userCkicksAcceptButtonOnPopup()"
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidClicksToMyAccountIcon()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 6032288300,
+              "duration": 1059022200,
               "status": "passed"
             },
             "line": 7,
-            "name": "User adds a  physical product to basket",
+            "name": "Android enters \"validEmail\" to email checkbox",
             "match": {
-              "location": "stepDefinitions.OrderStepDef.userAddsAPhysicalProductToBasket()"
+              "arguments": [
+                {
+                  "val": "\"validEmail\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidEntersToEmailCheckbox(java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 30387641600,
+              "duration": 1841964600,
               "status": "passed"
             },
             "line": 8,
-            "name": "User ckicks accept button on popup",
+            "name": "Android enters \"validPassword\" to password checkbox",
             "match": {
-              "location": "stepDefinitions.OrderStepDef.userCkicksAcceptButtonOnPopup()"
+              "arguments": [
+                {
+                  "val": "\"validPassword\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidEntersToPasswordCheckbox(java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 3485972900,
+              "duration": 2060854100,
               "status": "passed"
             },
             "line": 9,
-            "name": "User clicks add to basket button",
+            "name": "Android clicks login button",
             "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksAddToBasketButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1357106100,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User clicks my basket icon",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksMyBasketIcon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3296688100,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User clicks buy icon",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksBuyIcon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2825284300,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User clicks Now Register Button",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksNowRegisterButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 35131783800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "The user fills in the information in the form with valid values",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.theUserFillsInTheInformationInTheFormWithValidValues()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2942574500,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User click Register Button",
-            "match": {
-              "location": "stepDefinitions.RegisterStepDef.userClickRegisterButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 219322700,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User verifies Account Created message is visible",
-            "match": {
-              "location": "stepDefinitions.RegisterStepDef.userVerifiesAccountCreatedMessageIsVisible()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1541282500,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User clicks Add adress button",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksAddAdressButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13014913100,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "The user fills in the information on the address page",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.theUserFillsInTheInformationOnTheAddressPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1441245400,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User verifies that they have successfully added the address",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userVerifiesThatTheyHaveSuccessfullyAddedTheAddress()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1766555300,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User clicks OK button",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksOKButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1380256400,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User clicks my basket icon",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksMyBasketIcon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4003242000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User clicks buy icon",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksBuyIcon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1815599900,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User clicks continue button",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksContinueButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 546039400,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "User clicks Bank transfer radio button",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksBankTransferRadioButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 349025400,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User clicks continue button",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksContinueButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1541302700,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User clicks preinformation check box",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userClicksPreinformationCheckBox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 329027300,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User confirm order button",
-            "match": {
-              "location": "stepDefinitions.OrderStepDef.userConfirmOrderButton()"
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidClicksLoginButton()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@BankTransfer"
+            "name": "@AndroidLogin"
           }
         ]
       }
     ],
-    "name": "New User Order with Bank Transfer",
+    "name": "Android Login",
     "description": "",
-    "id": "new-user-order-with-bank-transfer",
+    "id": "android-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/orderNeeUserBankTransfer.feature",
+    "uri": "file:src/test/resources/features/android/Login.feature",
     "tags": [
       {
-        "name": "@BankTransfer",
+        "name": "@AndroidLogin",
         "type": "Tag",
         "location": {
           "line": 1,
