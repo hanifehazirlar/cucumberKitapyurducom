@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="35.952">
-    <testcase classname="Android Login" name="Android Valid Login Test" time="35.429">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.081">
+    <testcase classname="Android Login" name="Android Valid Login Test" time="31.298">
         <system-out>
-            <![CDATA[Given Anroid  on the main screen............................................passed
+            <![CDATA[Given Android on the main screen............................................passed
 And Android clicks to my account icon.......................................passed
 And Android enters "validEmail" to email checkbox...........................passed
 And Android enters "validPassword" to password checkbox.....................passed
 And Android clicks login button.............................................passed
+And Android verifies logged in..............................................passed
 ]]>
         </system-out>
     </testcase>

@@ -35,6 +35,18 @@ public class ReusableMethods {
                 break;
             }
         }
+    public static void tapOnButtonWithText(String text) {
+        List<MobileElement> mobileElementList = Driver.getAppiumDriver().findElementsByClassName("android.widget.Button");
+        for (MobileElement page: mobileElementList) {
+            if (page.getText().equals(text)){
+                page.click();
+            }else{
+                scrollWithUiScrollable(text);
+            }
+            break;
+        }
+    }
+
 
 //ikinci alternatif bir method
         public static void clickOnElementWithText(String elementText) throws InterruptedException {

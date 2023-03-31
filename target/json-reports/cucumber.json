@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-03-30T07:28:34.742Z",
+        "start_timestamp": "2023-03-31T08:49:25.412Z",
         "line": 4,
         "name": "Android Valid Login Test",
         "description": "",
@@ -13,19 +13,19 @@
         "steps": [
           {
             "result": {
-              "duration": 24055670900,
+              "duration": 18043558700,
               "status": "passed"
             },
             "line": 5,
-            "name": "Anroid  on the main screen",
+            "name": "Android on the main screen",
             "match": {
-              "location": "stepDefinitions.androidStepDef.LoginStepDef.anroidOnTheMainScreen()"
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidOnTheMainScreen()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6228857500,
+              "duration": 6504463500,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 1059022200,
+              "duration": 993074800,
               "status": "passed"
             },
             "line": 7,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 1841964600,
+              "duration": 776055700,
               "status": "passed"
             },
             "line": 8,
@@ -73,13 +73,25 @@
           },
           {
             "result": {
-              "duration": 2060854100,
+              "duration": 2942843100,
               "status": "passed"
             },
             "line": 9,
             "name": "Android clicks login button",
             "match": {
               "location": "stepDefinitions.androidStepDef.LoginStepDef.androidClicksLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1843776700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Android verifies logged in",
+            "match": {
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidVerifiesLoggedIn()"
             },
             "keyword": "And "
           }

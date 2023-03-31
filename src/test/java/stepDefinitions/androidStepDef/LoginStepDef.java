@@ -2,13 +2,14 @@ package stepDefinitions.androidStepDef;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import org.junit.Assert;
 import screens.Screens;
 import utils.ConfigReader;
 import utils.Driver;
 
 public class LoginStepDef extends Screens {
-    @Given("Anroid  on the main screen")
-    public void anroidOnTheMainScreen() {
+    @Given("Android on the main screen")
+    public void androidOnTheMainScreen() {
         Driver.getAppiumDriver();
     }
 
@@ -37,5 +38,10 @@ public class LoginStepDef extends Screens {
     }
 
 
+    @And("Android verifies logged in")
+    public void androidVerifiesLoggedIn() {
+        Assert.assertEquals(registerScreen().verifiesAccount.getText(),ConfigReader.getProperty("validEmail"));
 
+
+    }
 }

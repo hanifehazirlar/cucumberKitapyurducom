@@ -5,6 +5,21 @@ import utils.ReusableMethods;
 public class Screens extends ReusableMethods {
     private HomeScreen homeScreen;
     private LoginScreen loginScreen;
+    private RegisterScreen registerScreen;
+    private OrderScreen orderScreen;
+    public OrderScreen orderScreen() {
+        if (orderScreen == null) {
+            orderScreen = new OrderScreen();
+        }
+        return orderScreen;
+    }
+
+    public RegisterScreen registerScreen() {
+        if (registerScreen == null) {
+            registerScreen = new RegisterScreen();
+        }
+        return registerScreen;
+    }
 
     public HomeScreen homeScreen() {
         if (homeScreen == null) {

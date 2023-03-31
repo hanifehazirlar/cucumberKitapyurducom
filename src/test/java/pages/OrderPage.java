@@ -10,6 +10,7 @@ public class OrderPage  {
     public OrderPage(){
         PageFactory.initElements(new AppiumFieldDecorator(Driver.getAppiumDriver()), this);
     }
+
     @FindBy(xpath = "//*[@src='https://img.kitapyurdu.com/v1/getImage/fn:11656593/wi:200/wh:true']")
     public WebElement physicalProduct;
 
