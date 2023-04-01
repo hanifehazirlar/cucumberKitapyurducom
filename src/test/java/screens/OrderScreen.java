@@ -13,8 +13,11 @@ public class OrderScreen {
     @AndroidFindBy(xpath = "(//android.widget.ImageView)[5]")
     public MobileElement firstProduct;
 
-    @AndroidFindBy(xpath = "(//android.widget.ImageView)[14]")
+    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc=\"Sepetim\"]/android.widget.ImageView")
     public MobileElement myBasket;
+
+    @AndroidFindBy(id = "android:id/button2")
+    public MobileElement loginRegisterButton;
 
     @AndroidFindBy(id = "com.mobisoft.kitapyurdu:id/registerButton")
     public MobileElement registerButton;

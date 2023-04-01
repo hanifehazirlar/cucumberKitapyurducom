@@ -10,12 +10,13 @@ public class OrdeStepDef extends Screens {
    RegisterStepDef registerStepDef = new RegisterStepDef();
     @When("Android clicks a physical product")
     public void androidClicksAPhysicalProduct() {
-       tapOn(orderScreen().firstProduct);
+
+        tapOn(orderScreen().firstProduct);
     }
 
     @And("Android clicks {string} with textview")
     public void androidClicksWithTextview(String text) {
-        wait(3);
+        wait(6);
         tapOnElementWithText(text);
     }
 
@@ -37,18 +38,33 @@ public class OrdeStepDef extends Screens {
     @And("Android clicks {string} button")
     public void androidClicksButton(String text) {
         wait(6);
-        tapOnButtonWithText(text);
+        //tapOnButtonWithText(text);
+        tapOn(orderScreen().loginRegisterButton);
     }
 
     @And("Android clicks Sepetim button")
     public void androidClicksSepetimButton() {
+        wait(5);
         tapOn(orderScreen().myBasket);
 
     }
 
     @And("Android clicks Üye Ol button")
     public void androidClicksÜyeOlButton() {
-        wait(10);
-        jsclick(orderScreen().registerButton);
+
+        tapOn(orderScreen().registerButton);
+    }
+
+    @And("The Android fills in the information on the address page")
+    public void theAndroidFillsInTheInformationOnTheAddressPage() {
+        wait(5);
+        enterKeys(adressScreen().nameBox, registerStepDef.fakeFirstname);
+        enterKeys(adressScreen().lastNameBox,registerStepDef.fakeLastname);
+        tapOnButtonWithText("Türkiye");
+        tapOnButtonWithText("Türkiye");
+        wait(3);
+       // tapOnButtonWithText("*Şehir"); buradan devam edilecek
+        scrollButtonWithUiScrollable("Rize");
+
     }
 }

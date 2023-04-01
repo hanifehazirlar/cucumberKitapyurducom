@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.081">
-    <testcase classname="Android Login" name="Android Valid Login Test" time="31.298">
-        <system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="99.191">
+    <testcase classname="New User Order with Bank Transfer on Android" name="New User Order with Bank Transfer Test on Android" time="98.139">
+        <failure message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-CPLJUEO', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: C:/Users/lenovo/IdeaProject..., appActivity: , appPackage: com.mobisoft.kitapyurdu, autoAcceptAlert: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:/Users/lenovo/IdeaProject..., appActivity: , appPackage: , autoAcceptAlert: true, automationName: UiAutomator2, deviceName: FFY5T18301014957, newCommandTimeout: 60000, noReset: true, platformName: android, platformVersion: 8.0.0}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: RNE-L21, deviceName: FFY5T18301014957, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: FFY5T18301014957, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60000, noReset: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 8.0.0, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 1968, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: a371bc61-b873-4bc7-b91f-5d91ad3dacfa&#10;*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text(&quot;*Şehir&quot;))}" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given Android on the main screen............................................passed
-And Android clicks to my account icon.......................................passed
-And Android enters "validEmail" to email checkbox...........................passed
-And Android enters "validPassword" to password checkbox.....................passed
-And Android clicks login button.............................................passed
-And Android verifies logged in..............................................passed
+When Android clicks a physical product......................................passed
+And Android clicks "Sepete Ekle" with textview..............................passed
+And Android clicks "Giriş Yap / Üye Ol" button..............................passed
+And Android clicks Üye Ol button............................................passed
+And Android fills in the information in the form with valid values..........passed
+And Android clicks Sepetim button...........................................passed
+And Android clicks "Satın Al" with textview.................................passed
+And Android clicks "Adres Ekle" with textview...............................passed
+And The Android fills in the information on the address page................failed
+Then Android verifies that they have successfully added the address.........skipped
+And Android clicks OK button................................................skipped
+And Android clicks my basket icon...........................................skipped
+And Android clicks buy icon.................................................skipped
+And Android clicks continue button..........................................skipped
+And Android clicks Bank transfer radio button...............................skipped
+And Android clicks continue button..........................................skipped
+And Android clicks preinformation check box.................................skipped
+And Android confirm order button............................................skipped
+Then Android verifies order created message is visible......................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CPLJUEO', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:/Users/lenovo/IdeaProject..., appActivity: , appPackage: com.mobisoft.kitapyurdu, autoAcceptAlert: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:/Users/lenovo/IdeaProject..., appActivity: , appPackage: , autoAcceptAlert: true, automationName: UiAutomator2, deviceName: FFY5T18301014957, newCommandTimeout: 60000, noReset: true, platformName: android, platformVersion: 8.0.0}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: RNE-L21, deviceName: FFY5T18301014957, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: FFY5T18301014957, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60000, noReset: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 8.0.0, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 1968, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: a371bc61-b873-4bc7-b91f-5d91ad3dacfa
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text("*Şehir"))}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at utils.ReusableMethods.scrollWithUiScrollable(ReusableMethods.java:133)
+	at utils.ReusableMethods.tapOnButtonWithText(ReusableMethods.java:44)
+	at stepDefinitions.androidStepDef.OrdeStepDef.theAndroidFillsInTheInformationOnTheAddressPage(OrdeStepDef.java:66)
+	at ✽.The Android fills in the information on the address page(file:///C:/Users/lenovo/IdeaProjects/Kitapyurducom/src/test/resources/features/android/OrderNewAndroidBankTransfer.feature:14)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

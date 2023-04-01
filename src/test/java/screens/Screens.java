@@ -7,6 +7,14 @@ public class Screens extends ReusableMethods {
     private LoginScreen loginScreen;
     private RegisterScreen registerScreen;
     private OrderScreen orderScreen;
+    private AdressScreen adressScreen;
+
+    public AdressScreen adressScreen() {
+         if (adressScreen == null) {
+             adressScreen = new AdressScreen();
+         }
+         return adressScreen;
+    }
     public OrderScreen orderScreen() {
         if (orderScreen == null) {
             orderScreen = new OrderScreen();

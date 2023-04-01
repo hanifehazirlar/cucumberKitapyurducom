@@ -134,6 +134,12 @@ public class ReusableMethods {
         tapOn(driver.findElementByXPath("//android.widget.TextView[@text='" + elementText + "']"));
     }
 
+    public static void scrollButtonWithUiScrollable(String elementText) {
+        AndroidDriver<MobileElement> driver = (AndroidDriver) Driver.getAppiumDriver();
+        driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+elementText+"\"))");
+        tapOn(driver.findElementByXPath("//android.widget.Button[@text='" + elementText + "']"));
+    }
+
     public static void scrollDownToBeVisible(MobileElement element) {
 
     }
