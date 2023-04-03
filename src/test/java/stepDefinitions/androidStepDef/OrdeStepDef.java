@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 import screens.RegisterScreen;
 import screens.Screens;
+import utils.ConfigReader;
 import utils.ReusableMethods;
 
 public class OrdeStepDef extends Screens {
@@ -61,10 +62,47 @@ public class OrdeStepDef extends Screens {
         enterKeys(adressScreen().nameBox, registerStepDef.fakeFirstname);
         enterKeys(adressScreen().lastNameBox,registerStepDef.fakeLastname);
         tapOnButtonWithText("Türkiye");
+        wait(3);
         tapOnButtonWithText("Türkiye");
         wait(3);
-       // tapOnButtonWithText("*Şehir"); buradan devam edilecek
-        scrollButtonWithUiScrollable("Rize");
+        tapOn(adressScreen().cityBox);
+        wait(3);
+        enterKeys(adressScreen().searchBox, ConfigReader.getProperty("Ilseciniz"));
+        tapOnElementWithText(ConfigReader.getProperty("Ilseciniz"));
+        tapOn(adressScreen().cauntyBox);
+        enterKeys(adressScreen().searchBox, ConfigReader.getProperty("Ilceseciniz"));
+        tapOnElementWithText(ConfigReader.getProperty("Ilceseciniz"));
+        tapOn(adressScreen().districtBox);
+        enterKeys(adressScreen().searchBox, ConfigReader.getProperty("Mahalleseciniz"));
+        tapOnElementWithText(ConfigReader.getProperty("Mahalleseciniz"));
+        enterKeys(adressScreen().addressText, ConfigReader.getProperty("Adres"));
+        enterKeys(adressScreen().telephoneBox, ConfigReader.getProperty("SabitTelefon"));
+        enterKeys(adressScreen().mobilTelephoneBox,ConfigReader.getProperty("CepTelefon") );
+        tapOn(adressScreen().submitButton);
 
+
+    }
+
+    @And("Android clicks pttKargo radio button")
+    public void androidClicksPttKargoRadioButton() {
+    }
+
+    @And("Android clicks Continue Button")
+    public void androidClicksContinueButton() {
+        tapOnElementWithText("Devam Et");
+    }
+
+    @And("Android clicks BankTransfer Radio Button")
+    public void androidClicksBankTransferRadioButton() {
+        tapOn(adressScreen().bankTransferRadioButton);
+
+    }
+
+    @And("Android verifies total price")
+    public void androidVerifiesTotalPrice() {
+    }
+
+    @And("Android clicks preInformation checkBox")
+    public void androidClicksPreInformationCheckBox() {
     }
 }

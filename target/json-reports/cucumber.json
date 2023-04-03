@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-04-01T08:09:43.630Z",
+        "start_timestamp": "2023-04-03T06:47:15.241Z",
         "line": 4,
         "name": "New User Order with Bank Transfer Test on Android",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 20012380300,
+              "duration": 16161739000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 8563621900,
+              "duration": 6534210500,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 7854358800,
+              "duration": 7317302100,
               "status": "passed"
             },
             "line": 7,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 6413983100,
+              "duration": 6802995900,
               "status": "passed"
             },
             "line": 8,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 1622233700,
+              "duration": 1078077900,
               "status": "passed"
             },
             "line": 9,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 10392420700,
+              "duration": 9400872200,
               "status": "passed"
             },
             "line": 10,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 7518067300,
+              "duration": 6574464400,
               "status": "passed"
             },
             "line": 11,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 7806496500,
+              "duration": 7555425200,
               "status": "passed"
             },
             "line": 12,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 7577531500,
+              "duration": 6927542000,
               "status": "passed"
             },
             "line": 13,
@@ -145,9 +145,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-CPLJUEO\u0027, ip: \u0027192.168.1.104\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {app: C:/Users/lenovo/IdeaProject..., appActivity: , appPackage: com.mobisoft.kitapyurdu, autoAcceptAlert: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: C:/Users/lenovo/IdeaProject..., appActivity: , appPackage: , autoAcceptAlert: true, automationName: UiAutomator2, deviceName: FFY5T18301014957, newCommandTimeout: 60000, noReset: true, platformName: android, platformVersion: 8.0.0}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: RNE-L21, deviceName: FFY5T18301014957, deviceScreenDensity: 480, deviceScreenSize: 1080x2160, deviceUDID: FFY5T18301014957, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60000, noReset: true, pixelRatio: 3, platform: LINUX, platformName: android, platformVersion: 8.0.0, statBarHeight: 72, takesScreenshot: true, viewportRect: {height: 1968, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}\nSession ID: a371bc61-b873-4bc7-b91f-5d91ad3dacfa\n*** Element info: {Using\u003d-android uiautomator, value\u003dnew UiScrollable(new UiSelector()).scrollIntoView(text(\"*Şehir\"))}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)\r\n\tat utils.ReusableMethods.scrollWithUiScrollable(ReusableMethods.java:133)\r\n\tat utils.ReusableMethods.tapOnButtonWithText(ReusableMethods.java:44)\r\n\tat stepDefinitions.androidStepDef.OrdeStepDef.theAndroidFillsInTheInformationOnTheAddressPage(OrdeStepDef.java:66)\r\n\tat ✽.The Android fills in the information on the address page(file:///C:/Users/lenovo/IdeaProjects/Kitapyurducom/src/test/resources/features/android/OrderNewAndroidBankTransfer.feature:14)\r\n",
-              "duration": 20001728100,
-              "status": "failed"
+              "duration": 38197907800,
+              "status": "passed"
             },
             "line": 14,
             "name": "The Android fills in the information on the address page",
@@ -158,8 +157,7 @@
           },
           {
             "result": {
-              "duration": 998800,
-              "status": "skipped"
+              "status": "undefined"
             },
             "line": 15,
             "name": "Android verifies that they have successfully added the address",
@@ -177,7 +175,6 @@
           },
           {
             "result": {
-              "duration": 1000700,
               "status": "skipped"
             },
             "line": 17,
@@ -187,7 +184,6 @@
           },
           {
             "result": {
-              "duration": 998800,
               "status": "skipped"
             },
             "line": 18,
@@ -206,7 +202,7 @@
           },
           {
             "result": {
-              "duration": 1001800,
+              "duration": 3000100,
               "status": "skipped"
             },
             "line": 20,
@@ -216,7 +212,7 @@
           },
           {
             "result": {
-              "duration": 1000800,
+              "duration": 1002100,
               "status": "skipped"
             },
             "line": 21,
@@ -235,7 +231,6 @@
           },
           {
             "result": {
-              "duration": 998700,
               "status": "skipped"
             },
             "line": 23,

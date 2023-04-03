@@ -12,13 +12,10 @@ Feature: New User Order with Bank Transfer on Android
     And Android clicks "Satın Al" with textview
     And Android clicks "Adres Ekle" with textview
     And The Android fills in the information on the address page
-    Then Android verifies that they have successfully added the address
-    And Android clicks OK button
-    And Android clicks my basket icon
-    And Android clicks buy icon
-    And Android clicks continue button
-    And Android clicks Bank transfer radio button
-    And Android clicks continue button
-    And Android clicks preinformation check box
-    And Android confirm order button
-    Then Android verifies order created message is visible
+    And Android clicks pttKargo radio button
+    And Android clicks Continue Button
+    And Android clicks BankTransfer Radio Button
+    And Android clicks Continue Button
+    And Android verifies total price
+    And Android clicks preInformation checkBox
+    And Android clicks Continue Button

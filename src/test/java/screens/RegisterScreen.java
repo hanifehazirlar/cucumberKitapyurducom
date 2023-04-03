@@ -6,9 +6,11 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
 
+import java.time.Duration;
+
 public class RegisterScreen {
     public RegisterScreen() {
-        PageFactory.initElements(new AppiumFieldDecorator(Driver.getAppiumDriver()), this);
+        PageFactory.initElements(new AppiumFieldDecorator(Driver.getAppiumDriver(), Duration.ofSeconds(30)), this);
     }
     @AndroidFindBy(id = "com.mobisoft.kitapyurdu:id/editTextName")
     public MobileElement nameBox;
