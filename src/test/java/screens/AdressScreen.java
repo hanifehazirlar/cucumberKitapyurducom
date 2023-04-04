@@ -48,8 +48,6 @@ public class AdressScreen {
     public MobileElement submitButton;
 
 
-    @AndroidFindBy(id="com.mobisoft.kitapyurdu:id/imageViewRadioButton")
-    public MobileElement bankTransferRadioButton;
 
 
 

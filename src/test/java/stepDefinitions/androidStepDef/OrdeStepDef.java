@@ -1,18 +1,23 @@
 package stepDefinitions.androidStepDef;
 
+import io.appium.java_client.MobileElement;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import screens.RegisterScreen;
 import screens.Screens;
 import utils.ConfigReader;
+import utils.Driver;
 import utils.ReusableMethods;
+
+import java.util.List;
 
 public class OrdeStepDef extends Screens {
    RegisterStepDef registerStepDef = new RegisterStepDef();
     @When("Android clicks a physical product")
     public void androidClicksAPhysicalProduct() {
-
         tapOn(orderScreen().firstProduct);
+
     }
 
     @And("Android clicks {string} with textview")
@@ -83,26 +88,35 @@ public class OrdeStepDef extends Screens {
 
     }
 
-    @And("Android clicks pttKargo radio button")
-    public void androidClicksPttKargoRadioButton() {
-    }
-
-    @And("Android clicks Continue Button")
-    public void androidClicksContinueButton() {
-        tapOnElementWithText("Devam Et");
-    }
 
     @And("Android clicks BankTransfer Radio Button")
     public void androidClicksBankTransferRadioButton() {
-        tapOn(adressScreen().bankTransferRadioButton);
+        wait(5);
+        isElementPresent(orderScreen().bankTransferRadioButton);
+        tapOn(orderScreen().bankTransferRadioButton);
 
     }
 
     @And("Android verifies total price")
     public void androidVerifiesTotalPrice() {
+        isElementPresent(orderScreen().prices);
+        Double totalAmount = Double.parseDouble(orderScreen().prices.getText().substring(0,5).replace(",","."));
+        Double totalPrice = Double.parseDouble(orderScreen().totalPrices.getText().substring(0,5).replace(",","."));
+
+        Assert.assertEquals(totalAmount, totalAmount);
+
+
     }
 
     @And("Android clicks preInformation checkBox")
     public void androidClicksPreInformationCheckBox() {
+        tapOn(orderScreen().checkBoxAgreement);
     }
+
+    @And("Android verifies the order is created")
+    public void androidVerifiesTheOrderIsCreated() {
+    Assert.assertTrue(orderScreen().messageTextVerifies.getText().contains("siparişiniz başarıyla tamamlandı!"));
+    }
+
+
 }

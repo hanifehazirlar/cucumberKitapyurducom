@@ -12,10 +12,11 @@ Feature: New User Order with Bank Transfer on Android
     And Android clicks "Satın Al" with textview
     And Android clicks "Adres Ekle" with textview
     And The Android fills in the information on the address page
-    And Android clicks pttKargo radio button
-    And Android clicks Continue Button
+    And Android clicks "PTT Kargo" with textview
+    And Android clicks "Devam Et" with textview
     And Android clicks BankTransfer Radio Button
-    And Android clicks Continue Button
+    And Android clicks "Devam Et" with textview
     And Android verifies total price
     And Android clicks preInformation checkBox
-    And Android clicks Continue Button
+    And Android clicks "Siparişi Onaylayın" with textview
+    And Android verifies the order is created

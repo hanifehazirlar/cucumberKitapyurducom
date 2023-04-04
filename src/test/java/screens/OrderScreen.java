@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
 
 import java.time.Duration;
+import java.util.List;
 
 public class OrderScreen {
     public OrderScreen(){
@@ -15,12 +16,28 @@ public class OrderScreen {
     @AndroidFindBy(xpath = "(//android.widget.ImageView)[5]")
     public MobileElement firstProduct;
 
+
     @AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc=\"Sepetim\"]/android.widget.ImageView")
     public MobileElement myBasket;
 
     @AndroidFindBy(id = "android:id/button2")
     public MobileElement loginRegisterButton;
 
+    @AndroidFindBy(id="com.mobisoft.kitapyurdu:id/imageViewRadioButton")
+    public MobileElement bankTransferRadioButton;
+
     @AndroidFindBy(id = "com.mobisoft.kitapyurdu:id/registerButton")
     public MobileElement registerButton;
+
+    @AndroidFindBy(id = "com.mobisoft.kitapyurdu:id/checkBoxAgreement")
+    public MobileElement checkBoxAgreement;
+
+    @AndroidFindBy(id = "com.mobisoft.kitapyurdu:id/textViewTotalPrice")
+    public MobileElement prices;
+
+    @AndroidFindBy(xpath = "(//android.widget.TextView[@resource-id='com.mobisoft.kitapyurdu:id/textViewPrice'])[2]")
+    public MobileElement totalPrices;
+
+    @AndroidFindBy(id="com.mobisoft.kitapyurdu:id/orderCompleteMessageTextView")
+    public MobileElement messageTextVerifies;
 }

@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-04-03T06:47:15.241Z",
+        "start_timestamp": "2023-04-04T07:41:44.050Z",
         "line": 4,
         "name": "New User Order with Bank Transfer Test on Android",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16161739000,
+              "duration": 16360184700,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 6534210500,
+              "duration": 7823168600,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 7317302100,
+              "duration": 8092045400,
               "status": "passed"
             },
             "line": 7,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 6802995900,
+              "duration": 6374543500,
               "status": "passed"
             },
             "line": 8,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 1078077900,
+              "duration": 1102078200,
               "status": "passed"
             },
             "line": 9,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 9400872200,
+              "duration": 10138695000,
               "status": "passed"
             },
             "line": 10,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 6574464400,
+              "duration": 7050894400,
               "status": "passed"
             },
             "line": 11,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 7555425200,
+              "duration": 7849459400,
               "status": "passed"
             },
             "line": 12,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 6927542000,
+              "duration": 8218069000,
               "status": "passed"
             },
             "line": 13,
@@ -145,7 +145,7 @@
           },
           {
             "result": {
-              "duration": 38197907800,
+              "duration": 43410769200,
               "status": "passed"
             },
             "line": 14,
@@ -157,95 +157,123 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 7638944300,
+              "status": "passed"
             },
             "line": 15,
-            "name": "Android verifies that they have successfully added the address",
-            "match": {},
-            "keyword": "Then "
+            "name": "Android clicks \"PTT Kargo\" with textview",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PTT Kargo\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
+            },
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 7860115700,
+              "status": "passed"
             },
             "line": 16,
-            "name": "Android clicks OK button",
-            "match": {},
+            "name": "Android clicks \"Devam Et\" with textview",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Devam Et\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 6517121000,
+              "status": "passed"
             },
             "line": 17,
-            "name": "Android clicks my basket icon",
-            "match": {},
+            "name": "Android clicks BankTransfer Radio Button",
+            "match": {
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksBankTransferRadioButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 7532604400,
+              "status": "passed"
             },
             "line": 18,
-            "name": "Android clicks buy icon",
-            "match": {},
+            "name": "Android clicks \"Devam Et\" with textview",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Devam Et\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 4541806100,
+              "status": "passed"
             },
             "line": 19,
-            "name": "Android clicks continue button",
-            "match": {},
+            "name": "Android verifies total price",
+            "match": {
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidVerifiesTotalPrice()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3000100,
-              "status": "skipped"
+              "duration": 2171581400,
+              "status": "passed"
             },
             "line": 20,
-            "name": "Android clicks Bank transfer radio button",
-            "match": {},
+            "name": "Android clicks preInformation checkBox",
+            "match": {
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksPreInformationCheckBox()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1002100,
-              "status": "skipped"
+              "duration": 8223124100,
+              "status": "passed"
             },
             "line": 21,
-            "name": "Android clicks continue button",
-            "match": {},
+            "name": "Android clicks \"Siparişi Onaylayın\" with textview",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Siparişi Onaylayın\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1940143500,
+              "status": "passed"
             },
             "line": 22,
-            "name": "Android clicks preinformation check box",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
+            "name": "Android verifies the order is created",
+            "match": {
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidVerifiesTheOrderIsCreated()"
             },
-            "line": 23,
-            "name": "Android confirm order button",
-            "match": {},
             "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 24,
-            "name": "Android verifies order created message is visible",
-            "match": {},
-            "keyword": "Then "
           }
         ],
         "tags": [
