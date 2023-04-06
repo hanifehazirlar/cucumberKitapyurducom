@@ -40,4 +40,21 @@ public class OrderScreen {
 
     @AndroidFindBy(id="com.mobisoft.kitapyurdu:id/orderCompleteMessageTextView")
     public MobileElement messageTextVerifies;
+
+    @AndroidFindBy(id="android:id/button3")
+    public MobileElement okButton;
+
+    //========Total amount
+    @AndroidFindBy(xpath="//android.widget.FrameLayout[@content-desc=\"Ana Sayfa\"]/android.widget.ImageView")
+    public MobileElement homeScreenIcon;
+
+    @AndroidFindBy(xpath = "(//android.widget.ImageView)[4]")
+    public MobileElement secondProduct;
+
+    @AndroidFindBy(id = "com.mobisoft.kitapyurdu:id/textViewTotal")
+    public List<MobileElement> pricesProduct;
+
+    @AndroidFindBy(id = "com.mobisoft.kitapyurdu:id/textViewTotalPrice")
+    public MobileElement totalAmount;
+
 }

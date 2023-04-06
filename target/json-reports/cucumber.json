@@ -3,17 +3,17 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-04-04T07:41:44.050Z",
+        "start_timestamp": "2023-04-06T08:23:26.466Z",
         "line": 4,
-        "name": "New User Order with Bank Transfer Test on Android",
+        "name": "Total amount validation",
         "description": "",
-        "id": "new-user-order-with-bank-transfer-on-android;new-user-order-with-bank-transfer-test-on-android",
+        "id": "order-total-amount;total-amount-validation",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 16360184700,
+              "duration": 21210788800,
               "status": "passed"
             },
             "line": 5,
@@ -25,10 +25,82 @@
           },
           {
             "result": {
-              "duration": 7823168600,
+              "duration": 6045341200,
               "status": "passed"
             },
             "line": 6,
+            "name": "Android clicks to my account icon",
+            "match": {
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidClicksToMyAccountIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1245091100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Android enters \"validEmail\" to email checkbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"validEmail\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidEntersToEmailCheckbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1289532100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Android enters \"validPassword\" to password checkbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"validPassword\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidEntersToPasswordCheckbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2905213700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Android clicks login button",
+            "match": {
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidClicksLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3218238900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Android clicks the homepage icon",
+            "match": {
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksTheHomepageIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3217261900,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "Android clicks a physical product",
             "match": {
               "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksAPhysicalProduct()"
@@ -37,10 +109,10 @@
           },
           {
             "result": {
-              "duration": 8092045400,
+              "duration": 7337646200,
               "status": "passed"
             },
-            "line": 7,
+            "line": 12,
             "name": "Android clicks \"Sepete Ekle\" with textview",
             "match": {
               "arguments": [
@@ -55,52 +127,52 @@
           },
           {
             "result": {
-              "duration": 6374543500,
+              "duration": 2567184700,
               "status": "passed"
             },
-            "line": 8,
-            "name": "Android clicks \"Giriş Yap / Üye Ol\" button",
+            "line": 13,
+            "name": "Android clicks the homepage icon",
+            "match": {
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksTheHomepageIcon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2538643900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Android clicks on the second item",
+            "match": {
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksOnTheSecondItem()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8450010300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Android clicks \"Sepete Ekle\" with textview",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Giriş Yap / Üye Ol\"",
+                  "val": "\"Sepete Ekle\"",
                   "offset": 15
                 }
               ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksButton(java.lang.String)"
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1102078200,
+              "duration": 7334503400,
               "status": "passed"
             },
-            "line": 9,
-            "name": "Android clicks Üye Ol button",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksÜyeOlButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 10138695000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "Android fills in the information in the form with valid values",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidFillsInTheInformationInTheFormWithValidValues()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7050894400,
-              "status": "passed"
-            },
-            "line": 11,
+            "line": 16,
             "name": "Android clicks Sepetim button",
             "match": {
               "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksSepetimButton()"
@@ -109,188 +181,32 @@
           },
           {
             "result": {
-              "duration": 7849459400,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Android clicks \"Satın Al\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Satın Al\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8218069000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Android clicks \"Adres Ekle\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Adres Ekle\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 43410769200,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "The Android fills in the information on the address page",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.theAndroidFillsInTheInformationOnTheAddressPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7638944300,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Android clicks \"PTT Kargo\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"PTT Kargo\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7860115700,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Android clicks \"Devam Et\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Devam Et\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6517121000,
+              "duration": 7277690000,
               "status": "passed"
             },
             "line": 17,
-            "name": "Android clicks BankTransfer Radio Button",
+            "name": "Android confirms the total amount",
             "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksBankTransferRadioButton()"
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidConfirmsTheTotalAmount()"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7532604400,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "Android clicks \"Devam Et\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Devam Et\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4541806100,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "Android verifies total price",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidVerifiesTotalPrice()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2171581400,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Android clicks preInformation checkBox",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksPreInformationCheckBox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8223124100,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Android clicks \"Siparişi Onaylayın\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Siparişi Onaylayın\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1940143500,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Android verifies the order is created",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidVerifiesTheOrderIsCreated()"
-            },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@AndroidBankTransfer"
+            "name": "@TotalAmount"
           }
         ]
       }
     ],
-    "name": "New User Order with Bank Transfer on Android",
+    "name": "Order total amount",
     "description": "",
-    "id": "new-user-order-with-bank-transfer-on-android",
+    "id": "order-total-amount",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/android/OrderNewAndroidBankTransfer.feature",
+    "uri": "file:src/test/resources/features/android/OrderTotalAmount.feature",
     "tags": [
       {
-        "name": "@AndroidBankTransfer",
+        "name": "@TotalAmount",
         "type": "Tag",
         "location": {
           "line": 1,

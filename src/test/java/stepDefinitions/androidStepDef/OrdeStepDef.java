@@ -2,8 +2,10 @@ package stepDefinitions.androidStepDef;
 
 import io.appium.java_client.MobileElement;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 import screens.RegisterScreen;
 import screens.Screens;
 import utils.ConfigReader;
@@ -11,6 +13,8 @@ import utils.Driver;
 import utils.ReusableMethods;
 
 import java.util.List;
+
+
 
 public class OrdeStepDef extends Screens {
    RegisterStepDef registerStepDef = new RegisterStepDef();
@@ -87,13 +91,12 @@ public class OrdeStepDef extends Screens {
 
 
     }
-
-
     @And("Android clicks BankTransfer Radio Button")
     public void androidClicksBankTransferRadioButton() {
-        wait(5);
-        isElementPresent(orderScreen().bankTransferRadioButton);
-        tapOn(orderScreen().bankTransferRadioButton);
+        if (orderScreen().okButton.isDisplayed()){
+            tapOnButtonWithText("Tamam");
+            tapOn(orderScreen().bankTransferRadioButton);
+        }else  tapOn(orderScreen().bankTransferRadioButton);
 
     }
 
@@ -118,5 +121,35 @@ public class OrdeStepDef extends Screens {
     Assert.assertTrue(orderScreen().messageTextVerifies.getText().contains("siparişiniz başarıyla tamamlandı!"));
     }
 
+    @And("Android clicks the homepage icon")
+    public void androidClicksTheHomepageIcon() {
+        tapOn(orderScreen().homeScreenIcon);
+    }
 
+    @When("Android clicks on the second item")
+    public void androidClicksOnTheSecondItem() {
+        tapOn(orderScreen().secondProduct);
+    }
+
+    @Then("Android confirms the total amount")
+    public void androidConfirmsTheTotalAmount() {
+        List<MobileElement> pricesProduct =orderScreen().pricesProduct;
+
+        Double totalPrices=0.0;
+        for (int i = 0; i <pricesProduct.size() ; i++) {
+
+            totalPrices+=Double.parseDouble(pricesProduct.get(i).getText().substring(0,5).replace(",","."));
+
+        }
+        Double totalAmount=Double.parseDouble(orderScreen().totalAmount.getText().substring(0,6).replace(",","."));
+
+        Assert.assertEquals(totalAmount, totalPrices);
+
+
+
+
+
+
+
+    }
 }
