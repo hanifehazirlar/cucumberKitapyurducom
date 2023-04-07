@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-04-06T08:23:26.466Z",
+        "start_timestamp": "2023-04-07T07:33:05.303Z",
         "line": 4,
         "name": "Total amount validation",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 21210788800,
+              "duration": 14590191300,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 6045341200,
+              "duration": 4326210600,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 1245091100,
+              "duration": 1037074200,
               "status": "passed"
             },
             "line": 7,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 1289532100,
+              "duration": 774056200,
               "status": "passed"
             },
             "line": 8,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 2905213700,
+              "duration": 2343453700,
               "status": "passed"
             },
             "line": 9,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 3218238900,
+              "duration": 3013222900,
               "status": "passed"
             },
             "line": 10,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 3217261900,
+              "duration": 3116388000,
               "status": "passed"
             },
             "line": 11,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 7337646200,
+              "duration": 7381304100,
               "status": "passed"
             },
             "line": 12,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 2567184700,
+              "duration": 2808825500,
               "status": "passed"
             },
             "line": 13,
@@ -139,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 2538643900,
+              "duration": 2425780900,
               "status": "passed"
             },
             "line": 14,
@@ -151,7 +151,7 @@
           },
           {
             "result": {
-              "duration": 8450010300,
+              "duration": 7431951100,
               "status": "passed"
             },
             "line": 15,
@@ -169,7 +169,7 @@
           },
           {
             "result": {
-              "duration": 7334503400,
+              "duration": 6149821700,
               "status": "passed"
             },
             "line": 16,
@@ -181,10 +181,94 @@
           },
           {
             "result": {
-              "duration": 7277690000,
+              "duration": 6925211400,
               "status": "passed"
             },
             "line": 17,
+            "name": "Android clicks \"Satın Al\" with textview",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Satın Al\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7800190300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Android clicks \"PTT Kargo\" with textview",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PTT Kargo\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7129846200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Android clicks \"Devam Et\" with textview",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Devam Et\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30767554800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Android clicks BankTransfer Radio Button",
+            "match": {
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksBankTransferRadioButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7316408300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Android clicks \"Devam Et\" with textview",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Devam Et\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5375332900,
+              "status": "passed"
+            },
+            "line": 22,
             "name": "Android confirms the total amount",
             "match": {
               "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidConfirmsTheTotalAmount()"

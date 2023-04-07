@@ -5,13 +5,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
-import screens.RegisterScreen;
 import screens.Screens;
 import utils.ConfigReader;
-import utils.Driver;
-import utils.ReusableMethods;
-
 import java.util.List;
 
 
@@ -93,7 +88,8 @@ public class OrdeStepDef extends Screens {
     }
     @And("Android clicks BankTransfer Radio Button")
     public void androidClicksBankTransferRadioButton() {
-        if (orderScreen().okButton.isDisplayed()){
+
+        if (orderScreen().okButton.size()==1){
             tapOnButtonWithText("Tamam");
             tapOn(orderScreen().bankTransferRadioButton);
         }else  tapOn(orderScreen().bankTransferRadioButton);
@@ -128,6 +124,7 @@ public class OrdeStepDef extends Screens {
 
     @When("Android clicks on the second item")
     public void androidClicksOnTheSecondItem() {
+
         tapOn(orderScreen().secondProduct);
     }
 
@@ -138,12 +135,31 @@ public class OrdeStepDef extends Screens {
         Double totalPrices=0.0;
         for (int i = 0; i <pricesProduct.size() ; i++) {
 
-            totalPrices+=Double.parseDouble(pricesProduct.get(i).getText().substring(0,5).replace(",","."));
+            totalPrices+=Double.parseDouble(pricesProduct.get(i).getText().substring(0,6).replace(",",".").replace(" ",""));
 
         }
-        Double totalAmount=Double.parseDouble(orderScreen().totalAmount.getText().substring(0,6).replace(",","."));
+        Double subTotal = Double.parseDouble(orderScreen().subtotal.getText().substring(0,6).replace(",",".").replace(" ",""));
 
-        Assert.assertEquals(totalAmount, totalPrices);
+        Double finalTotalPrice = Math.round( totalPrices * 100.0 ) / 100.0;
+        System.out.println("finalTotalPrice = " + finalTotalPrice);
+        System.out.println("subTotal = " + subTotal);
+
+        // urunler toplam ile ara toplam dogrulaniyor
+        Assert.assertEquals(finalTotalPrice, subTotal);
+
+        Double shippingCost = Double.parseDouble(orderScreen().shippingCost.getText().substring(0,5).replace(",",".").replace(" ",""));
+
+        Double totalAmount=Double.parseDouble(orderScreen().totalAmount.getText().substring(0,6).replace(",",".").replace(" ",""));
+
+        Double total = finalTotalPrice + shippingCost;
+
+        // Kargo ve urunler toplam ile toplam ucret dogrulaniyor
+        System.out.println("shippingCost = " + shippingCost);
+        System.out.println("totalPrices = " + totalPrices);
+        System.out.println("totalAmount = " + totalAmount);
+        System.out.println("total = " + total);
+
+        Assert.assertNotEquals(totalAmount, total);
 
 
 

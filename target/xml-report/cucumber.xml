@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="75.515">
-    <testcase classname="Order total amount" name="Total amount validation" time="74.885">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="121.353">
+    <testcase classname="Order total amount" name="Total amount validation" time="120.867">
         <system-out>
             <![CDATA[Given Android on the main screen............................................passed
 And Android clicks to my account icon.......................................passed
@@ -14,6 +14,11 @@ And Android clicks the homepage icon........................................pass
 When Android clicks on the second item......................................passed
 And Android clicks "Sepete Ekle" with textview..............................passed
 And Android clicks Sepetim button...........................................passed
+And Android clicks "Satın Al" with textview.................................passed
+And Android clicks "PTT Kargo" with textview................................passed
+And Android clicks "Devam Et" with textview.................................passed
+And Android clicks BankTransfer Radio Button................................passed
+And Android clicks "Devam Et" with textview.................................passed
 Then Android confirms the total amount......................................passed
 ]]>
         </system-out>
