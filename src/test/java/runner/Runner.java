@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml" },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = " @TotalAmount",
+        tags = "@Browser",
         dryRun = false
 )
 public class Runner {

@@ -13,6 +13,9 @@ Feature: Order total amount
     And Android clicks the homepage icon
     When Android clicks on the second item
     And Android clicks "Sepete Ekle" with textview
+    And Android clicks the homepage icon
+    When Android clicks on the third item
+    And Android clicks "Sepete Ekle" with textview
     And Android clicks Sepetim button
     And Android clicks "Satın Al" with textview
     And Android clicks "PTT Kargo" with textview

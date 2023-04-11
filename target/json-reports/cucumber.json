@@ -3,294 +3,119 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-04-07T07:33:05.303Z",
+        "start_timestamp": "2023-04-11T07:39:44.384Z",
         "line": 4,
-        "name": "Total amount validation",
+        "name": "Android Valid Login Test",
         "description": "",
-        "id": "order-total-amount;total-amount-validation",
+        "id": "android-login;android-valid-login-test",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 14590191300,
+              "duration": 50283858000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Android on the main screen",
+            "name": "Android on the \"Browser Stack\" main screen",
             "match": {
-              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidOnTheMainScreen()"
+              "arguments": [
+                {
+                  "val": "\"Browser Stack\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidOnTheMainScreen(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4326210600,
+              "duration": 118185916600,
               "status": "passed"
             },
             "line": 6,
-            "name": "Android clicks to my account icon",
+            "name": "Android Browser clicks to my account icon",
             "match": {
-              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidClicksToMyAccountIcon()"
+              "location": "stepDefinitions.androidStepDef.BrowserStackLoginDef.androidBrowserClicksToMyAccountIcon()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1037074200,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: com.mobisoft.kitapyurdu:id/editTextMail (tried for 30 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat stepDefinitions.androidStepDef.BrowserStackLoginDef.androidBrowserEntersToEmailCheckbox(BrowserStackLoginDef.java:37)\r\n\tat ✽.Android Browser enters \"nesteren_2007@hotmail.com\" to email checkbox(file:///C:/Users/lenovo/IdeaProjects/Kitapyurducom/src/test/resources/features/android/LoginBrowserStack.feature:7)\r\nCaused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-CPLJUEO\u0027, ip: \u0027192.168.1.104\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.15\u0027\nDriver info: io.appium.java_client.android.AndroidDriver\nCapabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.mobisoft.kitapyurdu.mai..., appPackage: com.mobisoft.kitapyurdu, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.1, buildName: browserstack-1, bundleID: com.mobisoft.kitapyurdu, bundleId: com.mobisoft.kitapyurdu, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.mobisoft.kitapyurdu.mai..., appPackage: com.mobisoft.kitapyurdu, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.1, buildName: browserstack-1, bundleID: com.mobisoft.kitapyurdu, bundleId: com.mobisoft.kitapyurdu, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: samsung galaxy a10, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-A105FN, deviceName: R58M81Q7VKD, deviceScreenDensity: 280, deviceScreenSize: 720x1520, deviceUDID: R58M81Q7VKD, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy A10-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 1.75, platform: ANDROID, platformName: Android, platformVersion: 9, projectName: Appium Project, realMobile: true, sessionId: e57c5ef96741dfc91b8f9349916..., sessionName: sample_test, skipServerInstallation: true, statBarHeight: 54, systemPort: 8200, takesScreenshot: true, udid: R58M81Q7VKD, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 1328, left: 0, top: 54, width: 720}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: samsung galaxy a10, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-A105FN, deviceName: R58M81Q7VKD, deviceScreenDensity: 280, deviceScreenSize: 720x1520, deviceUDID: R58M81Q7VKD, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy A10-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 1.75, platform: ANDROID, platformName: Android, platformVersion: 9, projectName: Appium Project, realMobile: true, sessionId: e57c5ef96741dfc91b8f9349916..., sessionName: sample_test, skipServerInstallation: true, statBarHeight: 54, systemPort: 8200, takesScreenshot: true, udid: R58M81Q7VKD, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 1328, left: 0, top: 54, width: 720}, warnings: {}, webStorageEnabled: false}\nSession ID: e57c5ef96741dfc91b8f9349916d44179367ee07\n*** Element info: {Using\u003did, value\u003dcom.mobisoft.kitapyurdu:id/editTextMail}\r\n\tat jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)\r\n\tat io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)\r\n\tat io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)\r\n\tat io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)\r\n\tat io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat stepDefinitions.androidStepDef.BrowserStackLoginDef.androidBrowserEntersToEmailCheckbox(BrowserStackLoginDef.java:37)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\r\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
+              "duration": 80901831200,
+              "status": "failed"
             },
             "line": 7,
-            "name": "Android enters \"validEmail\" to email checkbox",
+            "name": "Android Browser enters \"nesteren_2007@hotmail.com\" to email checkbox",
             "match": {
               "arguments": [
                 {
-                  "val": "\"validEmail\"",
-                  "offset": 15
+                  "val": "\"nesteren_2007@hotmail.com\"",
+                  "offset": 23
                 }
               ],
-              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidEntersToEmailCheckbox(java.lang.String)"
+              "location": "stepDefinitions.androidStepDef.BrowserStackLoginDef.androidBrowserEntersToEmailCheckbox(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 774056200,
-              "status": "passed"
+              "duration": 998900,
+              "status": "skipped"
             },
             "line": 8,
-            "name": "Android enters \"validPassword\" to password checkbox",
+            "name": "Android Browser enters \"Hanife04061982\" to password checkbox",
             "match": {
               "arguments": [
                 {
-                  "val": "\"validPassword\"",
-                  "offset": 15
+                  "val": "\"Hanife04061982\"",
+                  "offset": 23
                 }
               ],
-              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidEntersToPasswordCheckbox(java.lang.String)"
+              "location": "stepDefinitions.androidStepDef.BrowserStackLoginDef.androidBrowserEntersToPasswordCheckbox(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2343453700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
-            "name": "Android clicks login button",
+            "name": "Android Browser clicks login button",
             "match": {
-              "location": "stepDefinitions.androidStepDef.LoginStepDef.androidClicksLoginButton()"
+              "location": "stepDefinitions.androidStepDef.BrowserStackLoginDef.androidBrowserClicksLoginButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3013222900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
-            "name": "Android clicks the homepage icon",
+            "name": "Android Browser verifies logged in",
             "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksTheHomepageIcon()"
+              "location": "stepDefinitions.androidStepDef.BrowserStackLoginDef.androidBrowserVerifiesLoggedIn()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3116388000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Android clicks a physical product",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksAPhysicalProduct()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7381304100,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Android clicks \"Sepete Ekle\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Sepete Ekle\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2808825500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Android clicks the homepage icon",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksTheHomepageIcon()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2425780900,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "Android clicks on the second item",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksOnTheSecondItem()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7431951100,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Android clicks \"Sepete Ekle\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Sepete Ekle\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6149821700,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Android clicks Sepetim button",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksSepetimButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6925211400,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "Android clicks \"Satın Al\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Satın Al\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7800190300,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "Android clicks \"PTT Kargo\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"PTT Kargo\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7129846200,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "Android clicks \"Devam Et\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Devam Et\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 30767554800,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Android clicks BankTransfer Radio Button",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksBankTransferRadioButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7316408300,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Android clicks \"Devam Et\" with textview",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Devam Et\"",
-                  "offset": 15
-                }
-              ],
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidClicksWithTextview(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5375332900,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Android confirms the total amount",
-            "match": {
-              "location": "stepDefinitions.androidStepDef.OrdeStepDef.androidConfirmsTheTotalAmount()"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@TotalAmount"
+            "name": "@Browser"
           }
         ]
       }
     ],
-    "name": "Order total amount",
+    "name": "Android Login",
     "description": "",
-    "id": "order-total-amount",
+    "id": "android-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/android/OrderTotalAmount.feature",
+    "uri": "file:src/test/resources/features/android/LoginBrowserStack.feature",
     "tags": [
       {
-        "name": "@TotalAmount",
+        "name": "@Browser",
         "type": "Tag",
         "location": {
           "line": 1,

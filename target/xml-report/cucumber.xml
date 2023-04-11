@@ -1,26 +1,106 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="121.353">
-    <testcase classname="Order total amount" name="Total amount validation" time="120.867">
-        <system-out>
-            <![CDATA[Given Android on the main screen............................................passed
-And Android clicks to my account icon.......................................passed
-And Android enters "validEmail" to email checkbox...........................passed
-And Android enters "validPassword" to password checkbox.....................passed
-And Android clicks login button.............................................passed
-And Android clicks the homepage icon........................................passed
-When Android clicks a physical product......................................passed
-And Android clicks "Sepete Ekle" with textview..............................passed
-And Android clicks the homepage icon........................................passed
-When Android clicks on the second item......................................passed
-And Android clicks "Sepete Ekle" with textview..............................passed
-And Android clicks Sepetim button...........................................passed
-And Android clicks "Satın Al" with textview.................................passed
-And Android clicks "PTT Kargo" with textview................................passed
-And Android clicks "Devam Et" with textview.................................passed
-And Android clicks BankTransfer Radio Button................................passed
-And Android clicks "Devam Et" with textview.................................passed
-Then Android confirms the total amount......................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="251.379">
+    <testcase classname="Android Login" name="Android Valid Login Test" time="249.883">
+        <failure message="Expected condition failed: waiting for element to be clickable: By.id: com.mobisoft.kitapyurdu:id/editTextMail (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">
+            <![CDATA[Given Android on the "Browser Stack" main screen............................passed
+And Android Browser clicks to my account icon...............................passed
+And Android Browser enters "nesteren_2007@hotmail.com" to email checkbox....failed
+And Android Browser enters "Hanife04061982" to password checkbox............skipped
+And Android Browser clicks login button.....................................skipped
+And Android Browser verifies logged in......................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: com.mobisoft.kitapyurdu:id/editTextMail (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at stepDefinitions.androidStepDef.BrowserStackLoginDef.androidBrowserEntersToEmailCheckbox(BrowserStackLoginDef.java:37)
+	at ✽.Android Browser enters "nesteren_2007@hotmail.com" to email checkbox(file:///C:/Users/lenovo/IdeaProjects/Kitapyurducom/src/test/resources/features/android/LoginBrowserStack.feature:7)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CPLJUEO', ip: '192.168.1.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.mobisoft.kitapyurdu.mai..., appPackage: com.mobisoft.kitapyurdu, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.1, buildName: browserstack-1, bundleID: com.mobisoft.kitapyurdu, bundleId: com.mobisoft.kitapyurdu, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, adbExecTimeout: 120000, appActivity: com.mobisoft.kitapyurdu.mai..., appPackage: com.mobisoft.kitapyurdu, automationName: uiautomator2, browserstack.appium_version: 1.17.0, browserstack.is_hub_canary: false, browserstack.minOSVersion: 5.1, buildName: browserstack-1, bundleID: com.mobisoft.kitapyurdu, bundleId: com.mobisoft.kitapyurdu, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: samsung galaxy a10, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-A105FN, deviceName: R58M81Q7VKD, deviceScreenDensity: 280, deviceScreenSize: 720x1520, deviceUDID: R58M81Q7VKD, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy A10-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 1.75, platform: ANDROID, platformName: Android, platformVersion: 9, projectName: Appium Project, realMobile: true, sessionId: e57c5ef96741dfc91b8f9349916..., sessionName: sample_test, skipServerInstallation: true, statBarHeight: 54, systemPort: 8200, takesScreenshot: true, udid: R58M81Q7VKD, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 1328, left: 0, top: 54, width: 720}, warnings: {}, webStorageEnabled: false}, chromeOptions: {w3c: false}, chromedriverPort: 18080, chromedriverPorts: [[18100, 18110]], databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: samsung galaxy a10, deviceApiLevel: 28, deviceManufacturer: samsung, deviceModel: SM-A105FN, deviceName: R58M81Q7VKD, deviceScreenDensity: 280, deviceScreenSize: 720x1520, deviceUDID: R58M81Q7VKD, disableSuppressAccessibilityService: true, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: Samsung Galaxy A10-9.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orig_os: android, osVersion: 9.0, os_version: 9.0, pixelRatio: 1.75, platform: ANDROID, platformName: Android, platformVersion: 9, projectName: Appium Project, realMobile: true, sessionId: e57c5ef96741dfc91b8f9349916..., sessionName: sample_test, skipServerInstallation: true, statBarHeight: 54, systemPort: 8200, takesScreenshot: true, udid: R58M81Q7VKD, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 1328, left: 0, top: 54, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: e57c5ef96741dfc91b8f9349916d44179367ee07
+*** Element info: {Using=id, value=com.mobisoft.kitapyurdu:id/editTextMail}
+	at jdk.internal.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at stepDefinitions.androidStepDef.BrowserStackLoginDef.androidBrowserEntersToEmailCheckbox(BrowserStackLoginDef.java:37)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

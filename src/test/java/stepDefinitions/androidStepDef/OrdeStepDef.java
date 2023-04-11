@@ -159,13 +159,14 @@ public class OrdeStepDef extends Screens {
         System.out.println("totalAmount = " + totalAmount);
         System.out.println("total = " + total);
 
-        Assert.assertNotEquals(totalAmount, total);
+        if (shippingCost==0.0){
+            Assert.assertEquals(totalAmount, total);
+        }else Assert.assertNotEquals(totalAmount, total);
 
-
-
-
-
-
+    }
+    @When("Android clicks on the third item")
+    public void androidClicksOnTheThirdItem() {
+        tapOn(orderScreen().thirdProduct);
 
     }
 }

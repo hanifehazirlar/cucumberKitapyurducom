@@ -6,6 +6,9 @@ import org.junit.Assert;
 import screens.Screens;
 import utils.ConfigReader;
 import utils.Driver;
+import utils.DriverBrowserStack;
+
+import java.net.MalformedURLException;
 
 public class LoginStepDef extends Screens {
     @Given("Android on the main screen")
@@ -43,5 +46,13 @@ public class LoginStepDef extends Screens {
         Assert.assertEquals(registerScreen().verifiesAccount.getText(),ConfigReader.getProperty("validEmail"));
 
 
+    }
+
+    @Given("Android on the {string} main screen")
+    public void androidOnTheMainScreen(String device) throws MalformedURLException, InterruptedException {
+        if (device.equals("Browser Stack")){
+            DriverBrowserStack.browserStackAndroid();
+
+        }else Driver.getAppiumDriver();
     }
 }
